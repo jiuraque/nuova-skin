@@ -13,30 +13,58 @@
         </div>
         <nav>
           <ul class="nav-links">
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Bestsellers</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#hero">Shop</a></li>
+            <li><a href="#bestsellers">Bestsellers</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#bio">About Us</a></li>
           </ul>
         </nav>
       </header>
 
-      <section class="hero">
-        <div class="hero-content"></div>
-        <div class="hero-img"></div>
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <h1>Your Skin, Your Glow</h1>
+          <p>Discover our best skincare products.</p>
+          <a href="#shop" class="btn">SHOP NOW</a>
+        </div>
       </section>
 
-      <section class="bestsellers">
+      <section id="bestsellers">
         <h2>Our Bestsellers</h2>
-        <div class="product-gallery"></div>
+        <div class="slider-container">
+          <div class="product">
+            <img src="./assets/imgs/eyecream.jpg" alt="Image of the Caffeine Eyecream">
+            <h3>Caffeine Eyecream</h3>
+          </div>
+          <div class="product">
+            <img src="./assets/imgs/cleanser.jpg" alt="Image of the AHA Cleanser">
+            <h3>AHA Cleanser</h3>
+          </div>
+          <div class="product">
+            <img src="./assets/imgs/vitamin-c.jpg" alt="Image of the 15% Vitamin C Serum">
+            <h3>15% Vitamin C</h3>
+          </div>
+          <div class="product">
+            <img src="./assets/imgs/sunscreen.jpg" alt="Image of the Tenue Soleil Sunscream SPF 30">
+            <h3>Tenue Soleil Sunscream SPF 30</h3>
+          </div>
+          <div class="product">
+            <img src="./assets/imgs/Retinol.jpg" alt="Image of the Retinol Renewing Cream">
+            <h3>Retinol Renewing Cream</h3>
+            <div class="product">
+              <img src="./assets/imgs/cleansing-balm.jpg" alt="Image of the Zero Pores Cleansing Balm">
+              <h3>Zero Pores Cleansing Balm</h3>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="testimonial">
+      <section id="testimonial">
         <h2>What Our Customers Say</h2>
         <div class="testimonial-list"></div>
       </section>
 
-      <section class="bio">
+      <section id="bio">
         <h2>About Us</h2>
         <article></article>
       </section>
