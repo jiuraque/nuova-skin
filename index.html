@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuova Skin | Beauty & Sustainability</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
+
   <body>
     <div class="container">
       <header class="navbar">
@@ -23,106 +24,130 @@
       </header>
 
       <main>
-      <section class="hero" id="hero">
-        <div class="hero-content">
-          <h1>Your Skin, Your Glow</h1>
-          <p>Discover our best skincare products.</p>
-          <a href="#shop" class="btn">SHOP NOW</a>
-        </div>
-      </section>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+          <div class="hero-content">
+            <h1>Your Skin, Your Glow</h1>
+            <p>Discover our best skincare products.</p>
+            <a href="#shop" class="btn">SHOP NOW</a>
+          </div>
+        </section>
 
-      <section id="bestsellers">
-        <h2>Our Bestsellers</h2>
-        <div class="slider-container">
-          <div class="product">
-            <img
-              src="./assets/imgs/eyecream.jpg"
-              alt="Image of the Caffeine Eyecream"
-            />
-            <h3>Caffeine Eyecream</h3>
-          </div>
-          <div class="product">
-            <img
-              src="./assets/imgs/cleanser.jpg"
-              alt="Image of the AHA Cleanser"
-            />
-            <h3>AHA Cleanser</h3>
-          </div>
-          <div class="product">
-            <img
-              src="./assets/imgs/vitamin-c.jpg"
-              alt="Image of the 15% Vitamin C Serum"
-            />
-            <h3>15% Vitamin C</h3>
-          </div>
-          <div class="product">
-            <img
-              src="./assets/imgs/sunscreen.jpg"
-              alt="Image of the Tenue Soleil Sunscream SPF 30"
-            />
-            <h3>Tenue Soleil Sunscream SPF 30</h3>
-          </div>
-          <div class="product">
-            <img
-              src="./assets/imgs/Retinol.jpg"
-              alt="Image of the Retinol Renewing Cream"
-            />
-            <h3>Retinol Renewing Cream</h3>
-            <div class="product">
-              <img
-                src="./assets/imgs/cleansing-balm.jpg"
-                alt="Image of the Zero Pores Cleansing Balm"
-              />
-              <h3>Zero Pores Cleansing Balm</h3>
+        <!-- Bestsellers Section -->
+        <section id="bestsellers">
+          <h2>Our Bestsellers</h2>
+          <div class="slider">
+            <div class="slides">
+              <!-- Slide 1 -->
+              <div class="product">
+                <img
+                  src="./assets/imgs/eyecream.jpg"
+                  alt="Image of the Caffeine Eyecream"
+                />
+                <h3>Caffeine Eyecream</h3>
+              </div>
+              <!-- Slide 2 -->
+              <div class="product">
+                <img
+                  src="./assets/imgs/cleanser.jpg"
+                  alt="Image of the AHA Cleanser"
+                />
+                <h3>AHA Cleanser</h3>
+              </div>
+              <!-- Slide 3 -->
+              <div class="product">
+                <img
+                  src="./assets/imgs/vitamin-c.jpg"
+                  alt="Image of the 15% Vitamin C Serum"
+                />
+                <h3>15% Vitamin C</h3>
+              </div>
+              <!-- Slide 4 -->
+              <div class="product">
+                <img
+                  src="./assets/imgs/sunscreen.jpg"
+                  alt="Image of the Tenue Soleil Sunscream SPF 30"
+                />
+                <h3>Tenue Soleil Sunscream SPF 30</h3>
+              </div>
+              <!-- Slide 5 -->
+              <div class="product">
+                <img
+                  src="./assets/imgs/Retinol.jpg"
+                  alt="Image of the Retinol Renewing Cream"
+                />
+                <h3>Retinol Renewing Cream</h3>
+              </div>
+              <!-- Slide 6 -->
+              <div class="product">
+                <img
+                  src="./assets/imgs/cleansing-balm.jpg"
+                  alt="Image of the Zero Pores Cleansing Balm"
+                />
+                <h3>Zero Pores Cleansing Balm</h3>
+              </div>
+            </div>
+
+            <div class="paginacion">
+              <button id="prev" disabled>&lt; Prev</button>
+              <span id="page-numbers">
+                <button class="page-number" data-page="1">1</button>
+                <button class="page-number" data-page="2">2</button>
+                <button class="page-number" data-page="3">3</button>
+              </span>
+              <button id="next">&gt; Next</button>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="testimonial">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial-card">
-          <h2>Allison C</h2>
-          <p>"This product changed my life!"</p>
-          <h3>Caffeine Eyecream</h3>
-        </div>
-        <div class="testimonial-card">
-          <h2>Fran F.</h2>
-          <p>"The best skincare routine ever."</p>
-          <h3>15% Vitamin C</h3>
-        </div>
-        <div class="testimonial-card">
-          <h2>Cece B.</h2>
-          <p>"Highly recommend this brand to everyone."</p>
-          <h3>Tenue Soleil Sunscream SPF 30</h3>
-        </div>
-        <div class="testimonial-card">
-          <h2>Maggie S.</h2>
-          <p>"Excellent quality and quick results."</p>
-          <h3>Retinol Renewing Cream</h3>
-        </div>
-      </section>
+        <!-- Testimonials Section -->
+        <section id="testimonial">
+          <h2>What Our Customers Say</h2>
+          <div class="testimonial-card">
+            <h2>Allison C.</h2>
+            <p>"This product changed my life!"</p>
+            <h3>Caffeine Eyecream</h3>
+          </div>
+          <div class="testimonial-card">
+            <h2>Fran F.</h2>
+            <p>"The best skincare routine ever."</p>
+            <h3>15% Vitamin C</h3>
+          </div>
+          <div class="testimonial-card">
+            <h2>Cece B.</h2>
+            <p>"Highly recommend this brand to everyone."</p>
+            <h3>Tenue Soleil Sunscream SPF 30</h3>
+          </div>
+          <div class="testimonial-card">
+            <h2>Maggie S.</h2>
+            <p>"Excellent quality and quick results."</p>
+            <h3>Retinol Renewing Cream</h3>
+          </div>
+        </section>
 
-      <section id="bio">
-        <h2>About Us</h2>
-        <article>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-            sunt labore nam eos quo cumque maxime pariatur ratione doloremque
-            quis iste vero suscipit autem voluptates quaerat, similique unde
-            laborum impedit.
-          </p>
-        </article>
-        <img
-          src="./assets/imgs/bio-pic.jpg"
-          alt="Reflection of a Woman with bare skin"
-        />
-      </section>
-    </main>
+        <!-- About Us Section -->
+        <section id="bio">
+          <h2>About Us</h2>
+          <article>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+              sunt labore nam eos quo cumque maxime pariatur ratione doloremque
+              quis iste vero suscipit autem voluptates quaerat, similique unde
+              laborum impedit.
+            </p>
+          </article>
+          <img
+            src="./assets/imgs/bio-pic.jpg"
+            alt="Reflection of a Woman with bare skin"
+          />
+        </section>
+      </main>
 
-      <footer>
-        <div class="footer-links"></div>
-        <div class="footer-socials"></div>
+      <!-- Footer -->
+      <footer class="footer">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <h4>Todos los derechos reservados</h4>
       </footer>
     </div>
   </body>
