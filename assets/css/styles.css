@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +7,53 @@
 }
 
 :root {
-  --bg-main: #f9dbbd; 
-  --accent-light: #ffa5ab; 
-  --accent-medium: #da627d; 
-  --accent-dark: #a53860; 
+  --bg-main: #f9dbbd;
+  --accent-light: #ffa5ab;
+  --accent-medium: #da627d;
+  --accent-dark: #a53860;
   --accent-deep: #5d001e;
   --accent-black: #000000;
-  --accent-white: #FFFF;
+  --accent-white: #ffff;
 }
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-main);
+}
+
+body {
+    font-family: "Dosis", serif;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "hero"
+    "bestsellers"
+    "testimonial"
+    "bio"
+    "footer";
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.product img {
+    width: 500px;
+    height: 500px;
+}
+
+#bestsellers {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 1rem 0;
+}
+
+.slider-container {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    scroll-behavior: smooth;
+}
+
