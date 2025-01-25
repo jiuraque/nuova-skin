@@ -47,7 +47,6 @@ body {
   justify-content: space-between;
   padding: 10px 20px;
   z-index: 1000;
-  border-radius: 0px 0px 10px 10px;
 }
 
 .navbar .logo img {
@@ -212,18 +211,20 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
+  padding: 0.5px;
 }
 
 .bio img {
   width: 100%;
-  max-width: 200px;
+  height: 300px;
 }
 
 .bio .text {
   text-align: center;
   color: var(--accent-dark);
-  max-width: 500px;
+  max-width: 300px; 
 }
 
 /* Footer */
@@ -235,7 +236,11 @@ footer {
   padding: 20px;
 }
 
-/* Desktop styles */
+footer i {
+  padding: 0.675rem;
+}
+
+
 @media (min-width: 576px) {
   .container {
     grid-template-areas:
@@ -252,7 +257,6 @@ footer {
     width: auto;
     justify-content: flex-start;
     padding: 20px;
-    border-radius: 0px 10px 10px 0px;
   }
 
   .navbar .nav-links {
