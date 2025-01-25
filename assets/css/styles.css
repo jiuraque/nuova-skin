@@ -263,15 +263,16 @@ footer i {
     grid-template-areas:
       "navbar main"
       "navbar footer";
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 1fr auto;
+      grid-template-columns: 200px 1fr; 
+      grid-template-rows: 1fr auto;
+      height: 100vh; 
   }
 
   .navbar {
     flex-direction: column;
     position: fixed;
-    height: 100vh;
-    width: auto;
+    width: 200px; 
+    height: 100%;
     justify-content: flex-start;
     padding: 20px;
   }
@@ -279,6 +280,7 @@ footer i {
   .navbar .nav-links {
     flex-direction: column;
     gap: 10px;
+    overflow-y: auto;
   }
 
   .navbar .logo img {
@@ -291,11 +293,6 @@ footer i {
 
   .product {
     flex: 0 0 33.33%;
-  }
-
-  .product img {
-    height: auto;
-
   }
 
   .testimonial {
