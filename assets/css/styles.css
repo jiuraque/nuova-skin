@@ -258,7 +258,7 @@ footer i {
 }
 
 
-@media (min-width: 675px) {
+@media (min-width: 768px) {
   .container {
     grid-template-areas:
       "navbar main"
