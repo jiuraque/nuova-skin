@@ -18,10 +18,12 @@
   --accent-white: #ffff;
 }
 
-body {
+
+html, body {
   background-color: var(--bg-main);
   font-family: "Dosis", serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -94,18 +96,18 @@ main {
   margin-top: 80px;
 }
 
-.hero {
+#hero {
   background: url("../imgs/hero-pic.jpg") no-repeat center center/cover;
   color: var(--accent-light);
   text-align: center;
   padding: 50px 20px;
 }
 
-.hero h1 {
+#hero h1 {
   font-size: 2.5rem;
 }
 
-.hero .btn {
+#hero .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -114,26 +116,26 @@ main {
   text-decoration: none;
 }
 
-.hero .btn:hover {
+#hero .btn:hover {
   background-color: var(--accent-deep);
   border: 1px solid var(--accent-deep);
   border-radius: 5px;
 }
 
-.bestsellers,
-.testimonial,
-.bio {
+#bestsellers,
+#testimonial,
+#bio {
   padding: 20px;
 }
 
-.bestsellers {
+#bestsellers {
   text-align: center;
   background-color: var(--accent-dark);
   color: var(--accent-light);
   padding: 2rem;
 }
 
-.bestsellers h2 {
+#bestsellers h2 {
   padding: 20px;
   font-size: xx-large;
   font-weight: 700;
@@ -185,14 +187,14 @@ main {
   }
 }
 
-.testimonial {
+#testimonial {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   color: var(--bg-main);
 }
 
-.testimonial h2 {
+#testimonial h2 {
   align-items: center;
   justify-content: center;
   color: var(--accent-deep);
@@ -217,7 +219,7 @@ main {
 }
 
 /* Bio */
-.bio {
+#bio {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,7 +229,7 @@ main {
   color: var(--accent-deep);
 }
 
-.bio img {
+#bio img {
   width: 400px;
   height: 400px;
 }
@@ -295,16 +297,16 @@ footer i {
     flex: 0 0 33.33%;
   }
 
-  .testimonial {
+  #testimonial {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .bio {
+  #bio {
     flex-direction: row;
     align-items: center;
   }
 
-  .bio img {
+  #bio img {
     width: 400px;
     height: 400px;
   }
