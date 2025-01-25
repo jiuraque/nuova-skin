@@ -1,3 +1,5 @@
+/* General */
+
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 
 * {
@@ -16,44 +18,40 @@
   --accent-white: #ffff;
 }
 
-html, body  {
+body {
   background-color: var(--bg-main);
   font-family: "Dosis", serif;
   font-size: 16px;
 }
 
-/* Container */
 .container {
   display: grid;
-    grid-template-areas: 
-      "navbar"
-      "main"
-      "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "navbar"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto;
 }
-
 
 /* Navbar */
 .navbar {
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  background: var(--accent-deep);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: var(--accent-deep);
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   z-index: 1000;
-  border-radius: 0px 0px 25px 25px;
-  
+  border-radius: 0px 0px 10px 10px;
 }
 
 .navbar .logo img {
-  max-height: 50px;
+  height: 40px;
 }
 
 .navbar nav {
@@ -68,65 +66,223 @@ html, body  {
   font-size: 1.4rem;
 }
 
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  gap: 1.2rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
 .navbar .nav-links li a {
   color: var(--bg-main);
   text-decoration: none;
+  font-weight: 200;
+  font-size: 16px;
   padding: 8px 12px;
   border-radius: 4px;
   transition: color 0.3s;
 }
 
 .navbar .nav-links li a:hover {
- color: var(--accent-light);
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
-  padding: 1rem;
-  font-size: 1.4rem;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--bg-main);
-  font-weight: bold;
-  padding: 0.3rem;
-  transition: color 0.3s ease;
-}
-
-.navbar .nav-links a:hover {
   color: var(--accent-light);
 }
 
-/* Hero Section */
-
-
-
-
-
-/* Bestsellers Section */
-#bestsellers {
-  grid-area: bestsellers;
+/* Main content */
+main {
+  grid-area: main;
+  margin-top: 80px;
 }
 
-/* Testimonials Section */
-#testimonial {
-  grid-area: testimonial;
+.hero {
+  background: url("../imgs/hero-pic.jpg") no-repeat center center/cover;
+  color: var(--accent-light);
+  text-align: center;
+  padding: 50px 20px;
 }
-/* About Section */
-#bio {
-  grid-area: bio;
+
+.hero h1 {
+  font-size: 2.5rem;
 }
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: var(--accent-light);
+  text-decoration: none;
+}
+
+.hero .btn:hover {
+  background-color: var(--accent-deep);
+  border: 1px solid var(--accent-deep);
+  border-radius: 5px;
+}
+
+.bestsellers,
+.testimonial,
+.bio {
+  padding: 50px 20px;
+}
+
+.bestsellers {
+  text-align: center;
+  background-color: var(--accent-dark);
+  color: var(--accent-light);
+  padding: 2rem;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  animation: slide-animation 10s infinite;
+}
+
+.product {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@keyframes slide-animation {
+  0%,
+  33.33% {
+    transform: translateX(0);
+  }
+  33.34%,
+  66.66% {
+    transform: translateX(-100%);
+  }
+  66.67%,
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  color: var(--bg-main);
+}
+
+.testimonial h2 {
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-deep);
+}
+
+.testimonial-card {
+  background-color: var(--accent-deep);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.testimonial-card .author {
+  font-weight: bold;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+/* Bio */
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bio img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.bio .text {
+  text-align: center;
+  color: var(--accent-dark);
+  max-width: 500px;
+}
+
 /* Footer */
 footer {
   grid-area: footer;
+  background-color: var(--accent-deep);
+  color: var(--bg-main);
+  text-align: center;
+  padding: 20px;
 }
 
-/* Media Queries */
+/* Desktop styles */
+@media (min-width: 576px) {
+  .container {
+    grid-template-areas:
+      "navbar main"
+      "navbar footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr auto;
+  }
 
+  .navbar {
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: auto;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar .logo img {
+    height: 53px;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .product {
+    flex: 0 0 33.33%;
+  }
+
+  .testimonial {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Bio */
+.bio {
+  flex-direction: row;
+  align-items: center;
+}
+
+.bio .text {
+  text-align: left;
+}
